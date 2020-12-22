@@ -17,4 +17,4 @@ class calculator:
         return a*b
 
     def divi(self,a,b):
-        return a//b
+        return a/b
