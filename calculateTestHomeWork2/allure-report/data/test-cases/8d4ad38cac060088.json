@@ -1,0 +1,119 @@
+{
+  "uid" : "8d4ad38cac060088",
+  "name" : "test_divi[getdiviDatas0]",
+  "fullName" : "test_calculate.TestCalculate#test_divi",
+  "historyId" : "f6ecfc37d4754d90def6c386f732fb53",
+  "time" : {
+    "start" : 1608995388142,
+    "stop" : 1608995388143,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "fixture",
+    "time" : {
+      "start" : 1608995388075,
+      "stop" : 1608995388075,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "getdiviDatas",
+    "time" : {
+      "start" : 1608995388142,
+      "stop" : 1608995388142,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6744d5a6187bda5c",
+      "name" : "stdout",
+      "source" : "6744d5a6187bda5c.txt",
+      "type" : "text/plain",
+      "size" : 55
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "fixture::0",
+    "time" : {
+      "start" : 1608995388159,
+      "stop" : 1608995388159,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "run(order=4)"
+  }, {
+    "name" : "suite",
+    "value" : "test_calculate"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalculate"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-EPBVDMOD"
+  }, {
+    "name" : "thread",
+    "value" : "8936-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_calculate"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "getdiviDatas",
+    "value" : "[2, 2, 1.0]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=4)" ]
+  },
+  "source" : "8d4ad38cac060088.json",
+  "parameterValues" : [ "[2, 2, 1.0]" ]
+}

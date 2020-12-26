@@ -14,10 +14,11 @@ def getYamlDatas(path):
     with open(path) as f:
         datas = yaml.safe_load(f)
         return datas
-yamlDatas=getYamlDatas("../file/datas.yaml")
-print(yamlDatas)
+
 
 class TestCalculator():
+    yamlDatas=getYamlDatas("../file/datas.yaml")
+
     def setup_class(self):
         self.cal = calculator()
 
