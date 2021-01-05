@@ -32,6 +32,7 @@ class TestWeiXin():
             json.dump(cookies,f)
 
     def test_addCookies(self):
+        self.driver.get("https://work.weixin.qq.com")
         with open("cookies.json","r") as f:
             cookies = json.load(f)
         for cookie in cookies:
