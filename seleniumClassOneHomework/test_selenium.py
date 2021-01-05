@@ -23,6 +23,7 @@ class TestWeiXin():
         sleep(3)
         self.driver.quit()
 
+    # 写入过cookie后下次跳过运行
     @pytest.mark.skip
     def test_witerCookies(self):
         self.driver.get("https://work.weixin.qq.com/wework_admin/frame")
