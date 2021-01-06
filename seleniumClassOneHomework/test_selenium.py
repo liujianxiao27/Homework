@@ -8,10 +8,15 @@
 import json
 from time import sleep
 
+
+
 import pytest
 from selenium import webdriver
 
 # 运行前cmd执行chrome --remote-debugging-port=9222
+from seleniumClassOneHomework import util
+
+
 class TestWeiXin():
     def setup(self):
         chromeargs = webdriver.ChromeOptions()
@@ -26,16 +31,12 @@ class TestWeiXin():
     # 写入过cookie后下次跳过运行
     @pytest.mark.skip
     def test_witerCookies(self):
-        self.driver.get("https://work.weixin.qq.com/wework_admin/frame")
-        cookies = self.driver.get_cookies()
-        with open("cookies.json","w") as f:
-            json.dump(cookies,f)
+        url = "https://work.weixin.qq.com/wework_admin/frame"
+        util.write_cookie(self.driver,url)
 
+    # @pytest.mark.skip
     def test_addCookies(self):
-        self.driver.get("https://work.weixin.qq.com")
-        with open("cookies.json","r") as f:
-            cookies = json.load(f)
-        for cookie in cookies:
-            self.driver.add_cookie(cookie)
+        url = "https://work.weixin.qq.com"
+        util.read_cookie(self.driver,url)
         self.driver.get("https://work.weixin.qq.com/wework_admin/frame")
         self.driver.find_element_by_xpath('//*[@id="menu_customer"]/span').click()
