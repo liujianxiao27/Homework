@@ -29,12 +29,12 @@ class TestWeiXin():
         self.driver.quit()
 
     # 写入过cookie后下次跳过运行
-    @pytest.mark.skip
+    # @pytest.mark.skip
     def test_witerCookies(self):
         url = "https://work.weixin.qq.com/wework_admin/frame"
         util.write_cookie(self.driver,url)
 
-    # @pytest.mark.skip
+    @pytest.mark.skip
     def test_addCookies(self):
         url = "https://work.weixin.qq.com"
         util.read_cookie(self.driver,url)

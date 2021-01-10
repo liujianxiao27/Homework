@@ -1,0 +1,30 @@
+addDepartment:
+  - by: xpath
+    locator: '//*[@id="js_contacts54"]/div/div[1]/div/div[1]/a'
+    action: click
+
+  - by: xpath
+    locator: '//*[@id="js_contacts54"]/div/div[1]/ul/li[1]/a'
+    action: click
+
+  - by: xpath
+    locator: '//*[@id="__dialog__MNDialog__"]/div/div[2]/div/form/div[1]/input'
+    action: sendkeys
+    value: "火影部"
+
+  - by: xpath
+    locator: '//*[@id="__dialog__MNDialog__"]/div/div[2]/div/form/div[3]/a/span[1]'
+    action: click
+
+  - by: xpath
+    locator: '/html/body/div[3]/div/div[2]/div/form/div[3]/div/div/ul/li/a'
+    action: click
+
+  - by: xpath
+    locator: '//*[@id="__dialog__MNDialog__"]/div/div[3]/a[1]'
+    action: click
+
+getDepartmentNames:
+  - by: xpath
+    locator: '//*[@id="1688850235672214"]//li/a'
+    action: getlist

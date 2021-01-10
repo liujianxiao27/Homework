@@ -1,0 +1,4 @@
+goAdminContacts:
+  - by: id
+    locator: "menu_contacts"
+    action: click
