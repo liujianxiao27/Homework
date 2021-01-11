@@ -34,7 +34,7 @@ class BasePage():
     # locator 定位元素
     def find(self,by,locator):
         if by == "css_selector":
-            element = self._driver.find_elements(By.CSS_SELECTOR,locator)
+            element = self._driver.find_element(By.CSS_SELECTOR,locator)
         else:
             element = self._driver.find_element(*by) if isinstance(by,tuple) else self._driver.find_element(by,locator)
         return element
