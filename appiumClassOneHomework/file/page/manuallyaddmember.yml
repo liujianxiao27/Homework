@@ -1,0 +1,22 @@
+addMember:
+  - by: xpath
+    locator: '//*[contains(@text,"姓名")]/../*[@resource-id="com.tencent.wework:id/b78"]'
+    action: sendkeys
+    value: '娜美'
+
+  - by: xpath
+    locator: '//*[contains(@text,"性别")]/..//*[@resource-id="com.tencent.wework:id/b8_"]'
+    action: click
+
+  - by: xpath
+    locator: '//*[@text="女"]'
+    action: click
+
+  - by: id
+    locator: 'com.tencent.wework:id/fuy'
+    action: sendkeys
+    value: '16920000000'
+
+  - by: id
+    locator: 'com.tencent.wework:id/ie7'
+    action: click
