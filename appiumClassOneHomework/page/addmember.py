@@ -14,3 +14,7 @@ class AddMember(BasePage):
     def goManuallyAddMember(self):
         self.performSteps("../file/page/addmember.yml","goManuallyAddMember")
         return ManuallyAddMember(self.driver)
+
+    def getTost(self):
+        toast = self.performSteps("../file/page/addmember.yml","getTost")
+        return toast

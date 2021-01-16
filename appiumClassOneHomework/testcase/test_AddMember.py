@@ -9,7 +9,9 @@ from appiumClassOneHomework.page.app import App
 from appiumClassOneHomework.testcase.TestBase import TestBase
 
 
-class TestAddMember():
+class TestAddMember(TestBase):
 
     def test_addSuccess(self):
-        App().start().goMain().goAddresslist().goAddMember().goManuallyAddMember().addMember()
+       toast = self.app.start().goMain().goAddresslist().goAddMember().goManuallyAddMember().addMember().getTost()
+       assert toast == "添加成功"
+

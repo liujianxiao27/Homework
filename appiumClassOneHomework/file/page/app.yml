@@ -1,6 +1,6 @@
 qiyeweixin:
-  platformName: android
-  deviceName: 2KE0220217012386
-  appPackage: com.tencent.wework
-  appActivity: .launch.WwMainActivity
-  noReset: True
+  platformName: "android"
+  deviceName: "2KE0220217012386"
+  appPackage: "com.tencent.wework"
+  appActivity: ".launch.WwMainActivity"
+  noReset: "True"

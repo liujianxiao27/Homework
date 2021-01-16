@@ -2,3 +2,8 @@ goManuallyAddMember:
   - by: xpath
     locator: '//*[@text="手动输入添加"]'
     action: click
+
+getTost:
+  - by: xpath
+    locator: '//*[@class="android.widget.Toast"'
+    action: text

@@ -5,7 +5,7 @@
 # @Version：V 0.1
 # @File : BasePage.py
 # @desc : page 公共方法
-
+from appium.webdriver.common.mobileby import MobileBy
 from appium.webdriver.webdriver import WebDriver
 
 from appiumClassOneHomework.util import yamlUtil
@@ -44,3 +44,10 @@ class BasePage():
                 element.click()
             elif action == "sendkeys":
                 element.send_keys(step["value"])
+            elif action == "text":
+                eletext = element.text
+                return
+
+    # def gettost(self):
+    #     eleText = self.driver.find_element(MobileBy.XPATH,'//*[contains(@text, "%s")]').text
+    #     return eleText

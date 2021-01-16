@@ -26,12 +26,20 @@ class App(BasePage):
                 "ensureWebviewsHavePages":True,
                 "settings[waitForIdleTimeout]":0
             }
+            # desireJson = yamlUtil.getDatasBykey("../file/page/app.yml","qiyeweixin")
             self.driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub",desireJson)
         else:
             self.driver.start_activity() #启动dirver
         self.driver.implicitly_wait(10)
         return self
 
+    # 重启app
+    def reStart(self):
+        pass
+
+    # 关闭app
+    def end(self):
+        self.driver.quit()
     # 跳转主页
     def goMain(self):
         return Main(self.driver)

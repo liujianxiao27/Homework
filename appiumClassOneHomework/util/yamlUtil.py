@@ -22,9 +22,8 @@ def getDatasBykey(path,key):
     return datas[key]
 
 def t():
-    datas = getDatasBykey("../file/page/manuallyaddmember.yml","addMember")
-    for data in datas:
-        print(data["by"])
+    datas = getDatasBykey("../file/page/app.yml","qiyeweixin")
+    print(datas)
 
 
 t()

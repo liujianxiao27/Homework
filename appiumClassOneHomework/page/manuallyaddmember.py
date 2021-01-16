@@ -9,6 +9,7 @@ from appium.webdriver.common.mobileby import MobileBy
 from selenium.webdriver.remote.mobile import Mobile
 
 from appiumClassOneHomework.page.BasePage import BasePage
+from appiumClassOneHomework.page.addmember import AddMember
 
 
 class ManuallyAddMember(BasePage):
@@ -16,5 +17,6 @@ class ManuallyAddMember(BasePage):
     # 添加成员
     def addMember(self):
         self.performSteps("../file/page/manuallyaddmember.yml","addMember")
+        return AddMember()
 
 
