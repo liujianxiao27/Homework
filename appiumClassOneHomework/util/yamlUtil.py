@@ -21,9 +21,3 @@ def getDatasBykey(path,key):
     datas = getDatas(path)
     return datas[key]
 
-def t():
-    datas = getDatasBykey("../file/page/app.yml","qiyeweixin")
-    print(datas)
-
-
-t()
