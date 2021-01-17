@@ -17,6 +17,6 @@ class ManuallyAddMember(BasePage):
     def addMember(self):
         from appiumClassOneHomework.page.addmember import AddMember
         self.performSteps("../file/page/manuallyaddmember.yml","addMember")
-        return AddMember()
+        return AddMember(self.driver)
 
 

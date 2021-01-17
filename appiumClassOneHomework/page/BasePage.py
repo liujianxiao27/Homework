@@ -46,7 +46,7 @@ class BasePage():
                 element.send_keys(step["value"])
             elif action == "text":
                 eletext = element.text
-                return
+                return eletext
 
     # def gettost(self):
     #     eleText = self.driver.find_element(MobileBy.XPATH,'//*[contains(@text, "%s")]').text

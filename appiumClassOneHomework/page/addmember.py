@@ -21,8 +21,7 @@ class AddMember(BasePage):
         return ManuallyAddMember(self.driver)
 
     def getTost(self):
-        # toast = self.performSteps("../file/page/addmember.yml","getTost")
-        toast = None
+        toast = self.performSteps("../file/page/addmember.yml","getTost")
+        # # ele = self.driver.find_element(MobileBy.XPATH, '//*[@class="android.widget.Toast"]').text
         # ele = self.driver.find_element(MobileBy.XPATH, '//*[@class="android.widget.Toast"]').text
-        ele = self.driver.find_element(MobileBy.XPATH, '//*[@class="android.widget.Toast"]').text
-        return ele
+        return toast

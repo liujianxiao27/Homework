@@ -5,5 +5,5 @@ goManuallyAddMember:
 
 getTost:
   - by: xpath
-    locator: '//*[@class="android.widget.Toast"'
+    locator: '//*[@class="android.widget.Toast"]'
     action: text
