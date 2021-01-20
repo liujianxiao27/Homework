@@ -1,0 +1,8 @@
+goMarket:
+  - by: id
+    locator: "com.xueqiu.android:id/post_status"
+    action: click
+
+  - by: xpath
+    locator: "//*[@text='行情']"
+    action: click

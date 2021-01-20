@@ -1,0 +1,4 @@
+xueqiu:
+  - by: id
+    locator: 'com.xueqiu.android:id/iv_close'
+    action: click

@@ -1,0 +1,7 @@
+XueQiu:
+  platformName: android
+  deviceName: 127.0.0.1:7555
+  appPackage: com.xueqiu.android
+  appActivity: .view.WelcomeActivityAlias
+  noReset: True
+
