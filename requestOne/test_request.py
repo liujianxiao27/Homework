@@ -35,7 +35,7 @@ class TestWeixin():
         url = f"https://qyapi.weixin.qq.com/cgi-bin/user/get?access_token={self.token}&userid={userId}"
         result = requests.get(url)
         print(result.json())
-        assert result.json()["name"] == "索隆"
+        assert result.json().get("name") == "索隆"
 
     # 更改成员信息
     def test_update(self):
